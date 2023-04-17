@@ -1,175 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>ithird technologies</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles.css">
-<!-- <script src="https://use.fontawesome.com/3d119c53f3.js"></script> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>iThird technologies</title>
+  <meta name="title" content="iThirds">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/bg-ship4.jpg">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-cyan w3-card w3-left-align w3-large">
-    <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-cyan" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> -->
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-white">About us</a>
-    <div class="dropdown">
-      <button class="dropbtn">Services
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#digitalsignage">Digital signage</a>
-        <a href="#technologyproducts">Technology products</a>
-      </div>
-    </div>
-    <a href="#RFQ" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Request for quote</a>
-   </div>
+  <!-- 
+    - #HEADER
+  -->
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-  </div>
-</div>
-
-<!-- Header -->
-<!-- <header class="w3-container w3-cyan w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-  <p class="w3-xlarge">Template by w3.css</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
-</header> -->
-
-<div class="header-container">
-  <img src="images/bg-mall2.jpg" alt="Snow" style="width:100%;">
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Bringing innovative solutions</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">in retail markets</p>
-  </div>
-</div>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="Services">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Our services</h1>
-      <h5 class="w3-padding-32">We bring end to end innovative solutions.</h5>
-
-      <p class="w3-text-grey">At iThird technologies, we recognize the unique needs of the business and its customers. We connect both in order to achieve targets using  optimized and efficient services or products.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-cyan"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="digitalsignage">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-text-cyan w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Digital signage</h1>
-      <h5 class="w3-padding-32">Latest digital signage psolutions to suit your needs.</h5>
-
-      <p class="w3-text-grey">Intelligent digital signage solutions drives business efficient and faster.</p>
-    </div>
-  </div>
-</div>
-
-<!-- third grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="technologyproducts">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Technology products</h1>
-      <h5 class="w3-padding-32">Integrating various technology products in retail industry.</h5>
-
-      <p class="w3-text-grey">Today's AI brings many technology products to add efficiency to the Retail industry. 
-        We understand the unique needs and provide custom solutions.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-cyan"></i>
-    </div>
-  </div>
-</div>
-
-<!-- 4th Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="RFQ">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-cyan w3-margin-right"></i>
-    </div>
-    <div class="w3-twothird">
+  <header class="header" data-header>
     <div class="container">
+      <div class="logo-placeholder">iThird technologies</div>
 
-      <form action="https://formspree.io/f/mbjeprej" method="post">
-        <!-- <label>Email: <input type="email" name="email" required ></label> -->
-        <input type="hidden" name="_subject" value="Website contact" />
-        <input type="text" name="_gotcha" style="display:none" />
-        Query: <textarea id="message" name="message" placeholder="Write your query.." style="height:200px"></textarea>
- 
-        <button class="button">Send enquiry</button>
-      </form>
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <div class="logo-placeholder">iThird technologies</div>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about-us" class="navbar-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navbar-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#product-categories" class="navbar-link">Product Categories</a>
+          </li>
+
+          <li>
+            <a href="#contact-us" class="navbar-link">Contact us</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:sales@ithirds.com" class="contact-link">sales@ithirds.com</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-sharp" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
     </div>
-  </div>
-  </div>
-</div>
+  </header>
 
-<div class="w3-row-padding w3-padding-64 w3-container" id="aboutus">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>About us</h1>
-      <h5 class="w3-padding-32">Young startup with many years of IT industry experience.</h5>
 
-      <p class="w3-text-grey">We are a young company with overall decade+ years of executing software projects.</p>
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/bg-ship4.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Defining project specific solutions with expertise.</h1>
+
+            <p class="hero-text">
+              We’re a young company that focuses on end-to-end solutions for customers.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">Explore Now</a>
+
+              <a href="#" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label" id="services">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">What We Do?</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Professional sourcing</h3>
+
+                <p class="card-text">
+                  Connect with verified and fully qualified suppliers in China, Vietnam, Korea, Taiwan and Japan.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Local point of contact</h3>
+
+                <p class="card-text">
+                  We act as your local point of contact, 
+                  provide your requirements to supliers and follow up orders until they reach their destinations.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Private label</h3>
+
+                <p class="card-text">
+                  We help you liase with suppliers to enable customised logos, 
+                  packaging for your products to diffrentiate them from competitors.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Quality control and compliance</h3>
+
+                <p class="card-text">
+                  Ensure products are quality checked and comply with regulatory requirements of respective import markets.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-labelledby="about-label" id="about-us">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/team.jpg" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              We bring solutions to make life easier for our clients.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <p class="accordion-content">
+                      iThird Technology Solutions Pty Ltd works as a global sourcing agency that enables easy access to products from international markets. Our core values revolve around reliability , consistency and dependable access to suppliers. 
+                      As your trusted partner, we address all your sourcing needs thus enabling you to focus more on running your business.
+                    </p>
+                    <p class="accordion-content">
+                      Our partnerships in China , Vietnam , Taiwan, Korea and Japan will help you find the right product, 
+                      at desired quality and the right price, We also offer shipping and logistical solutions to ensure the products get delivered to yout door step.                    </p>
+                  </h3>
+
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT US
+      -->
+      <section class="section-contactus" aria-labelledby="contactus-label" id="contact-us" style="background-color:#e7e9eb; height: 300;">
+        <div class="container">
+
+          <div class="form">
+
+          <form class="contactus-form" action="https://formspree.io/f/mbjeprej" method="post" style="align-items: center;">
+            <input type="hidden" name="_subject" value="Website contact" />
+            <input type="text" name="_gotcha" style="display:none" />
+            Message: <textarea id="message" name="message" placeholder="Write your query.." style="height:200px;"></textarea>
+            <button class="submit-button">Send enquiry</button>
+          </form>
+
+          </div>
+
+          <figure class="contactus-banner">
+            <img src="./assets/images/email.png" width="200" height="150" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list-footer">
+
+      <div class="footer-brand">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+           iThird technologies, Sydney, Australia
+          </address>
+        </li>
+
+      </ul>
     </div>
+  </footer>
 
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-cyan"></i>
-    </div>
-  </div>
-</div>
 
-<!-- quote -->
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-12">
-    <h1 class="w3-margin w3-large">Bringing innovative solutions</h1>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-12 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
-</footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
