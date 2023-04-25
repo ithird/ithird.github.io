@@ -915,7 +915,7 @@ body.nav-active { overflow: hidden; }
    */
 
   .about .container {
-    grid-template-columns: 1fr 0.7fr;
+    grid-template-columns: 0.7fr 1fr;
     align-items: center;
   }
 
