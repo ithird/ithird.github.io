@@ -539,6 +539,11 @@ body.nav-active { overflow: hidden; }
   gap: 50px;
 }
 
+.about-page .container {
+  display: grid;
+  gap: 50px;
+}
+
 .contactus .container {
   display: grid;
   gap: 50px;
@@ -596,6 +601,12 @@ body.nav-active { overflow: hidden; }
   padding-block-end: 20px;
 }
 
+.accordion-content-small {
+  padding-inline-start: 24px;
+  max-height: 0;
+  overflow: hidden;
+  text-size-adjust: 6;
+}
 
 
 
@@ -908,6 +919,11 @@ body.nav-active { overflow: hidden; }
     align-items: center;
   }
 
+  .about-page .container {
+    grid-template-columns: 1fr 0.25fr;
+    align-items: center;
+  }
+
   .contactus .container {
     grid-template-columns: 1fr 0.25fr;
     align-items: center;
@@ -929,7 +945,7 @@ body.nav-active { overflow: hidden; }
    */
 
   .feature .container {
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 1fr 0.25fr;
     align-items: center;
   }
 
@@ -954,6 +970,7 @@ body.nav-active { overflow: hidden; }
 
 .contactus-form {
   padding-left: 16px;
+  padding-top: 16px;
   padding-bottom: 10px;
   padding-inline: 10px;
   align-content: center;

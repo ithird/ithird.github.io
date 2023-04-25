@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>iThird technologies</title>
+  <meta name="title" content="iThirds">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/bg-ship4.jpg">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="logo-placeholder">iThird technologies</div>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <div class="logo-placeholder">iThird technologies</div>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about-us" class="navbar-link">About us</a>
+          </li>
+
+          <li>
+            <a href="index.html#services" class="navbar-link">Services</a>
+          </li>
+
+          <li>
+            <a href="index.html#product-categories" class="navbar-link">Product Categories</a>
+          </li>
+
+          <li>
+            <a href="process.html#process" class="navbar-link">Process</a>
+          </li>
+          
+          <li>
+            <a href="index.html#contact-us" class="navbar-link">Contact us</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:sales@ithirds.com" class="contact-link">sales@ithirds.com</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-sharp" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about-page" aria-labelledby="about-label" id="process">
+        <div class="container">
+
+          <!-- <figure class="about-banner">
+            <img src="./assets/images/team.jpg" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure> -->
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Our Process
+            </h2>
+
+            <h4 class="h4">
+              We help complete your needs in 4 steps:
+            </h4>
+            <label>
+
+            </label>
+            <ul>
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+                  <h3 class="card-title"> Submit your enquiry
+                  </h3>
+
+                  <p>
+                    tell us your need and our staff will contact you in 24 hours to understand your requirement in detail.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title"> Local Point of Contact
+                  </h3>
+                    <p class="card-text">
+                      We act as your local point of contact, provide your requirements to supliers and follow up orders until they reach their destinations.
+                    </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title"> Provide a quote
+                  </h3>
+                    <p class="accordion-content">
+                      our staff will revert to you with a quote as quikly as possible from a verified list if suppliers. We also help with a sample demo whenever needed                    
+                    </p>
+
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title"> Quote to Production
+                  </h3>
+                    <p class="accordion-content">
+                      Once the quote is accepted and an order is placed with the supplier , we track the order to completion until it is onboarded for transportation. Along the way , we help ensure any of your requirements around labeling , destination regulatory requirements are addressed by the supplier and inspection of the product is done before loading for shipment.
+                     </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title"> Destination delivery
+                  </h3>
+
+                    <p class="accordion-content">
+                      we help track your order until it is delivered to destination.
+                    </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list-footer">
+
+      <div class="footer-brand">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+           iThird technologies, Sydney, Australia
+          </address>
+        </li>
+
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
