@@ -1308,3 +1308,9 @@ ion-icon {
   cursor: pointer;
   border-radius: 2px;
 }
+
+.emailInput {
+
+  background-color : #d1d1d1; 
+
+}
